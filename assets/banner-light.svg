@@ -1,19 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-label="Talkdedsec — kod editoru, telemetri yok">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-label="Talkdedsec — a code editor with no telemetry">
 <title>Talkdedsec</title>
+<style>
+  .rise{opacity:0;animation:rise .7s cubic-bezier(.22,1,.36,1) both}
+  .rule{transform-box:fill-box;transform-origin:left center;animation:draw .9s cubic-bezier(.22,1,.36,1) .35s both}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @media (prefers-reduced-motion:reduce){.rise,.rule{animation:none;opacity:1;transform:none}}
+</style>
 <rect width="1280" height="380" fill="#fbfbfc"/>
 <rect x="0.5" y="0.5" width="1279" height="379" fill="none" stroke="#e2e4e9"/>
 
-<text x="72" y="84" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="16" letter-spacing="6" fill="#6a6f79">TALKDEDSEC</text>
-<text x="68" y="206" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="116" font-weight="700" letter-spacing="-4" fill="#18191c">Kod editörü.</text>
-<text x="72" y="262" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="33" font-weight="500" fill="#3a3e45">Telemetri yok. Ne kurduysan o çalışır.</text>
+<text class="rise" x="72" y="84" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="16" letter-spacing="6" fill="#6a6f79">TALKDEDSEC</text>
+<text class="rise" style="animation-delay:.08s" x="68" y="206" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="116" font-weight="700" letter-spacing="-4" fill="#18191c">Code editor.</text>
+<text class="rise" style="animation-delay:.18s" x="72" y="262" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="33" font-weight="500" fill="#3a3e45">No telemetry. Nothing you did not install.</text>
 
-<line x1="72" y1="298" x2="1208" y2="298" stroke="#e2e4e9"/>
+<line class="rule" x1="72" y1="298" x2="1208" y2="298" stroke="#e2e4e9"/>
 
 <g font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace">
-  <text x="72"  y="342" font-size="30" font-weight="600" fill="#18191c">0,41<tspan font-size="17" fill="#6a6f79"> SN AÇILIŞ</tspan></text>
-  <text x="352" y="342" font-size="30" font-weight="600" fill="#18191c">9<tspan font-size="17" fill="#6a6f79"> SÜREÇ</tspan></text>
-  <text x="560" y="342" font-size="30" font-weight="600" fill="#18191c">64<tspan font-size="17" fill="#6a6f79"> EKLENTİ</tspan></text>
-  <text x="790" y="342" font-size="30" font-weight="600" fill="#18191c">0<tspan font-size="17" fill="#6a6f79"> TELEMETRİ</tspan></text>
-  <text x="1208" y="342" text-anchor="end" font-size="17" fill="#6a6f79">WINDOWS x64 · v1.130.0</text>
+  <text class="rise" style="animation-delay:.55s" x="72"  y="342" font-size="30" font-weight="600" fill="#18191c">0.41<tspan font-size="17" fill="#6a6f79"> S COLD START</tspan></text>
+  <text class="rise" style="animation-delay:.65s" x="400" y="342" font-size="30" font-weight="600" fill="#18191c">9<tspan font-size="17" fill="#6a6f79"> PROCESSES</tspan></text>
+  <text class="rise" style="animation-delay:.75s" x="650" y="342" font-size="30" font-weight="600" fill="#18191c">64<tspan font-size="17" fill="#6a6f79"> EXTENSIONS</tspan></text>
+  <text class="rise" style="animation-delay:.85s" x="900" y="342" font-size="30" font-weight="600" fill="#18191c">0<tspan font-size="17" fill="#6a6f79"> TELEMETRY</tspan></text>
+  <text class="rise" style="animation-delay:.95s" x="1208" y="342" text-anchor="end" font-size="17" fill="#6a6f79">WINDOWS x64 · v1.130.0</text>
 </g>
 </svg>

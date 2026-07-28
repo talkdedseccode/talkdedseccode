@@ -1,35 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="604" viewBox="0 0 1200 604" role="img" aria-label="Sokulmeden once ve sonra: acilis, surec sayisi, yerlesik eklenti, telemetri ucu">
-<title>Aynı çekirdek, sökülmeden önce ve sonra</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="604" viewBox="0 0 1200 604" role="img" aria-label="Before and after the strip: cold start, process count, built-in extensions, startup endpoints">
+<title>The same core, before and after the strip</title>
+<style>
+    .bar{transform-box:fill-box;transform-origin:left center;animation:strip 1s cubic-bezier(.22,1,.36,1) both}
+    .after{opacity:0;animation:enter .5s ease-out both}
+    .before{opacity:0;animation:fade .5s ease-out both}
+    @keyframes strip{from{transform:scaleX(1)}to{transform:scaleX(var(--r))}}
+    @keyframes enter{from{opacity:0;transform:translateX(-6px)}to{opacity:1;transform:none}}
+    @keyframes fade{to{opacity:1}}
+    @media (prefers-reduced-motion:reduce){
+      .bar{animation:none;transform:scaleX(var(--r))}
+      .after,.before{animation:none;opacity:1}
+    }
+  </style>
 <rect width="1200" height="604" fill="#0b0b0c"/>
 <rect x="0.5" y="0.5" width="1199" height="603" fill="none" stroke="#232428"/>
-<text x="56" y="56" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15" letter-spacing="4" fill="#8f959e">AYNI ÇEKİRDEK</text>
-<text x="56" y="92" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="34" font-weight="600" letter-spacing="-0.6" fill="#f2f3f5">Sökülmeden önce ve sonra</text>
-<text x="56" y="132" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="13" fill="#8f959e">Çubuk, sonraki değerin öncekine oranı</text>
-<text x="452" y="132" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="14" letter-spacing="3" fill="#5a5f66">ÖNCE</text>
-<text x="1048" y="132" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="14" letter-spacing="3" fill="#8f959e">SONRA</text>
+<text x="56" y="56" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15" letter-spacing="4" fill="#8f959e">THE SAME CORE</text>
+<text x="56" y="92" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="34" font-weight="600" letter-spacing="-0.6" fill="#f2f3f5">Before and after the strip</text>
+<text x="56" y="132" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="13" fill="#8f959e">Bar length = after, relative to before</text>
+<text x="452" y="132" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="14" letter-spacing="3" fill="#5a5f66">BEFORE</text>
+<text x="1048" y="132" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="14" letter-spacing="3" fill="#8f959e">AFTER</text>
 <line x1="56" y1="150" x2="1144" y2="150" stroke="#232428"/>
-<text x="56" y="212" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Açılış, soğuk profil</text>
+<text x="56" y="212" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Cold start, clean profile</text>
 <rect x="470" y="195" width="560" height="22" fill="#101012" stroke="#232428"/>
-<rect x="470" y="195" width="78" height="22" fill="#f2f3f5"/>
-<text x="452" y="212" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">2–4 sn</text>
-<text x="1048" y="213" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">0,41 sn</text>
+<rect class="bar" style="--r:0.14;animation-delay:0.25s" x="470" y="195" width="560" height="22" fill="#f2f3f5"/>
+<text class="before" style="animation-delay:0.25s" x="452" y="212" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">2–4 s</text>
+<text class="after" style="animation-delay:1.00s" x="1048" y="213" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">0.41 s</text>
 <line x1="56" y1="254" x2="1144" y2="254" stroke="#232428"/>
-<text x="56" y="308" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Süreç sayısı</text>
+<text x="56" y="308" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Process count</text>
 <rect x="470" y="291" width="560" height="22" fill="#101012" stroke="#232428"/>
-<rect x="470" y="291" width="386" height="22" fill="#f2f3f5"/>
-<text x="452" y="308" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">12–14</text>
-<text x="1048" y="309" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">9</text>
+<rect class="bar" style="--r:0.69;animation-delay:0.41s" x="470" y="291" width="560" height="22" fill="#f2f3f5"/>
+<text class="before" style="animation-delay:0.41s" x="452" y="308" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">12–14</text>
+<text class="after" style="animation-delay:1.16s" x="1048" y="309" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">9</text>
 <line x1="56" y1="350" x2="1144" y2="350" stroke="#232428"/>
-<text x="56" y="404" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Yerleşik eklenti</text>
+<text x="56" y="404" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Built-in extensions</text>
 <rect x="470" y="387" width="560" height="22" fill="#101012" stroke="#232428"/>
-<rect x="470" y="387" width="364" height="22" fill="#f2f3f5"/>
-<text x="452" y="404" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">98</text>
-<text x="1048" y="405" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">64</text>
+<rect class="bar" style="--r:0.65;animation-delay:0.57s" x="470" y="387" width="560" height="22" fill="#f2f3f5"/>
+<text class="before" style="animation-delay:0.57s" x="452" y="404" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">98</text>
+<text class="after" style="animation-delay:1.32s" x="1048" y="405" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">64</text>
 <line x1="56" y1="446" x2="1144" y2="446" stroke="#232428"/>
-<text x="56" y="500" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Açılışta bağlanılan uç nokta</text>
+<text x="56" y="500" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Endpoints contacted at startup</text>
 <rect x="470" y="483" width="560" height="22" fill="#101012" stroke="#232428"/>
-<rect x="470" y="483" width="6" height="22" fill="#f2f3f5"/>
-<text x="452" y="500" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">var</text>
-<text x="1048" y="501" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">0</text>
-<text x="56" y="586" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="14" fill="#8f959e">Tek makine · üretim sürümü · soğuk profil · boşta pencere</text>
+<rect class="bar" style="--r:0.008;animation-delay:0.73s" x="470" y="483" width="560" height="22" fill="#f2f3f5"/>
+<text class="before" style="animation-delay:0.73s" x="452" y="500" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">some</text>
+<text class="after" style="animation-delay:1.48s" x="1048" y="501" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">0</text>
+<text x="56" y="586" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="14" fill="#8f959e">One machine · production build · clean profile · idle window</text>
 </svg>

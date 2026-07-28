@@ -1,14 +1,14 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/banner-dark.svg">
-  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/banner-light.svg" width="100%" alt="Talkdedsec — kod editörü. Telemetri yok. 0,41 sn açılış, 9 süreç, 64 eklenti, 0 telemetri ucu.">
+  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/banner-light.svg" width="100%" alt="Talkdedsec — code editor. No telemetry. 0.41 s cold start, 9 processes, 64 extensions, 0 telemetry endpoints.">
 </picture>
 
 <p align="center">
   <a href="https://code.talkdedsec.com"><b>code.talkdedsec.com</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/talkdedseccode/talkdedsec-editor"><b>editör</b></a>
+  <a href="https://github.com/talkdedseccode/talkdedsec-editor"><b>editor</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/talkdedseccode/talkdedsec-themes"><b>temalar</b></a>
+  <a href="https://github.com/talkdedseccode/talkdedsec-themes"><b>themes</b></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/talkdedseccode/talkdedsec-editor/discussions"><b>forum</b></a>
 </p>
@@ -18,22 +18,23 @@
 <table>
 <tr><td valign="top">
 
-<sub>ŞU AN ÜZERİNDE ÇALIŞTIĞIM</sub>
+<sub>WHAT I'M BUILDING</sub>
 
 ## [Talkdedsec](https://code.talkdedsec.com)
 
-**Açtığın anda hazır olan bir kod editörü.**
+**I got tired of watching an editor start.**
 
-Modern editörler her açılışta bir sürü şeyi birlikte getiriyor: kullanmadığın dil paketleri, arka planda
-konuşan telemetri katmanları, güncelleme kontrolleri, kurulum sırasında sormadan eklenen servisler.
-Bunların hiçbiri sana bir şey kazandırmıyor ama açılış süresini, bellek kullanımını ve süreç sayısını
-belirleyen şey tam olarak bunlar.
+Not the editor itself. The things it drags along: language servers for languages I don't write,
+a telemetry pipeline, an update checker that fires before I've typed a character. None of it was
+my idea, and all of it sits between me and a cursor.
 
-Talkdedsec bu katmanların sökülmesiyle ortaya çıktı. Telemetri kaynaktan kaldırıldı — kapatılmadı,
-ayarla gizlenmedi, kaldırıldı. Açılışta bağlanılan sunucu yok. Güncelleme sunucusu yok. Geriye kalan
-editörün kendisi: dosya, düzenleyici, terminal, git, ve editörün çekirdeğinde çalışan bir ajan.
+So I took it apart. Telemetry didn't get a toggle, it got removed. There's no update server to
+disable, because there isn't one. Thirty-four built-in extensions went with it.
 
-<sub><b>Windows x64 · sürüm 1.130.0 · kullanıcı düzeyi kurulum, yönetici hakkı istemez</b></sub>
+What's left boots in 0.41 seconds. Nine processes. Nothing dials out, so it works the same on a
+plane as it does at home.
+
+<sub><b>Windows x64 · v1.130.0 · installs per-user, never asks for admin</b></sub>
 
 </td></tr>
 </table>
@@ -42,7 +43,7 @@ editörün kendisi: dosya, düzenleyici, terminal, git, ve editörün çekirdeğ
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/sokuldu-dark.svg">
-  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/sokuldu-light.svg" width="100%" alt="Sökülmeden önce ve sonra: açılış 2-4 sn'den 0,41 sn'ye, süreç 12-14'ten 9'a, yerleşik eklenti 98'den 64'e, açılışta bağlanılan uç nokta sıfıra indi.">
+  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/sokuldu-light.svg" width="100%" alt="Before and after the strip: cold start 2-4 s to 0.41 s, processes 12-14 to 9, built-in extensions 98 to 64, startup endpoints to zero.">
 </picture>
 
 <br>
@@ -51,28 +52,29 @@ editörün kendisi: dosya, düzenleyici, terminal, git, ve editörün çekirdeğ
 <tr>
 <td width="62%" valign="top">
 
-### Geri kalan ölçümler
+### The rest of the numbers
 
 | | |
 |:---|---:|
-| Boşta bellek | **1,40 GB** |
-| Kurulu boyut | **1,12 GB** |
-| Kurulum dosyası | **253 MB** |
-| Pakette kalan source map | **0** |
-| Tema | **5** <sub>× 183 renk anahtarı</sub> |
-| Eklenti kaynağı | **Open VSX** |
+| Idle memory | **1.40 GB** |
+| Installed size | **1.12 GB** |
+| Installer | **253 MB** |
+| Source maps shipped | **0** |
+| Themes | **5** <sub>× 183 color keys</sub> |
+| Extensions from | **Open VSX** |
 
-<sub>Yöntem ve ham çıktılar: <a href="https://code.talkdedsec.com/tr/olcum/">code.talkdedsec.com/tr/olcum</a></sub>
+<sub>Same machine, production build, clean profile. Method and raw output:
+<a href="https://code.talkdedsec.com/en/olcum/">code.talkdedsec.com/en/olcum</a></sub>
 
 </td>
 <td width="38%" align="center" valign="middle">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/goz-koyu.png">
-  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/goz-acik.png" width="300" alt="Talkdedsec logosu — noktalardan oluşan bir göz">
+  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/goz-acik.png" width="300" alt="Talkdedsec logo — an eye drawn in halftone dots">
 </picture>
 
-<sub><b>BAKAR, KAYDETMEZ</b></sub>
+<sub><b>LOOKS. LOGS NOTHING.</b></sub>
 
 </td>
 </tr>
@@ -80,57 +82,58 @@ editörün kendisi: dosya, düzenleyici, terminal, git, ve editörün çekirdeğ
 
 <br>
 
-### Temalar
+### Themes
 
-<img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/themes.svg" width="100%" alt="Beş tema: Dark, Midnight, Matrix, Ember, Light">
+<img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/themes.svg" width="100%" alt="Five themes: Dark, Midnight, Matrix, Ember, Light">
 
-Her tema 183 renk anahtarı ve 16 renklik terminal paleti taşıyor. Tema değişince editör kromu, paneller,
-git işaretleri ve terminal çıktısı birlikte dönüyor — yalnız kod alanı değil.
+Five ship with it. Each covers 183 color keys and a full 16-colour terminal palette, so switching one
+doesn't leave the panels, git marks and terminal behind looking like the old theme.
 
 <br>
 
-### Depolar
+### Repositories
 
-- **[talkdedsec-editor](https://github.com/talkdedseccode/talkdedsec-editor)** — editörün belgeleri, sürümleri, kullanım şartları ve üçüncü taraf bildirimleri
-- **[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** — topluluk temaları; hesap açmadan, pull request ile
+- **[talkdedsec-editor](https://github.com/talkdedseccode/talkdedsec-editor)** — docs, releases, terms of use, third-party notices
+- **[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** — community themes. Open a pull request; no account signup, no form
 
 <br>
 
 <details>
-<summary><b>English</b></summary>
+<summary><b>Türkçe</b></summary>
 
 <br>
 
-**A code editor that is ready the moment you open it.**
+**Editörün açılmasını beklemekten bıktım.**
 
-Modern editors bring a lot along on every launch: language packs you never use, telemetry layers talking
-in the background, update checks, services added during install without asking. None of it does anything
-for you, yet it is exactly what determines startup time, memory use and process count.
+Editörün kendisinden değil. Yanında sürüklediği şeylerden: yazmadığım diller için dil sunucuları,
+bir telemetri hattı, daha tek karakter yazmadan çalışan bir güncelleme kontrolü. Hiçbiri benim fikrim
+değildi ve hepsi benimle imleç arasında duruyordu.
 
-Talkdedsec is what was left after those layers were stripped out. Telemetry was removed at the source —
-not disabled, not hidden behind a setting, removed. No server is contacted at startup. There is no update
-server. What remains is the editor itself: files, editor, terminal, git, and an agent running in the editor core.
+Söktüm. Telemetriye ayar konmadı, kaldırıldı. Kapatılacak bir güncelleme sunucusu da yok, çünkü hiç yok.
+Otuz dört yerleşik eklenti de onunla gitti.
 
-**Before and after the strip** — cold start 2–4 s → **0.41 s** · processes 12–14 → **9** ·
-built-in extensions 98 → **64** · endpoints contacted at startup → **0**
+Geriye kalan 0,41 saniyede açılıyor. Dokuz süreç. Hiçbir yere bağlanmıyor, yani uçakta da evdeki gibi çalışıyor.
+
+**Sökülmeden önce ve sonra** — açılış 2–4 sn → **0,41 sn** · süreç 12–14 → **9** ·
+yerleşik eklenti 98 → **64** · açılışta bağlanılan uç nokta → **0**
 
 | | |
 |:---|---:|
-| Idle memory | **1.40 GB** |
-| Installed size | **1.12 GB** |
-| Installer | **253 MB** |
-| Source maps left in the package | **0** |
-| Themes | **5** <sub>× 183 color keys</sub> |
-| Extension source | **Open VSX** |
+| Boşta bellek | **1,40 GB** |
+| Kurulu boyut | **1,12 GB** |
+| Kurulum dosyası | **253 MB** |
+| Pakete giren source map | **0** |
+| Tema | **5** <sub>× 183 renk anahtarı</sub> |
+| Eklenti kaynağı | **Open VSX** |
 
-<sub>Measured on a single machine, on the production build, with a cold profile. Nothing rounded.
-Method and raw output: <a href="https://code.talkdedsec.com/en/olcum/">code.talkdedsec.com/en/olcum</a></sub>
+<sub>Aynı makine, üretim sürümü, soğuk profil. Yöntem ve ham çıktılar:
+<a href="https://code.talkdedsec.com/tr/olcum/">code.talkdedsec.com/tr/olcum</a></sub>
 
-Each theme carries 183 color keys and a 16-color terminal palette. Switching a theme turns the editor
-chrome, panels, git decorations and terminal output together — not just the code area.
+Beş tema geliyor. Her biri 183 renk anahtarı ve tam 16 renklik terminal paleti kapsıyor; tema
+değişince paneller, git işaretleri ve terminal eski temada kalmıyor.
 
-- **[talkdedsec-editor](https://github.com/talkdedseccode/talkdedsec-editor)** — docs, releases, terms of use and third-party notices
-- **[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** — community themes, via pull request, no account needed
+- **[talkdedsec-editor](https://github.com/talkdedseccode/talkdedsec-editor)** — belgeler, sürümler, kullanım şartları, üçüncü taraf bildirimleri
+- **[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** — topluluk temaları. Pull request aç; hesap yok, form yok
 
 </details>
 
@@ -139,6 +142,6 @@ chrome, panels, git decorations and terminal output together — not just the co
 ---
 
 <sub>
-Editör açık kaynak bir editör çekirdeği üzerine kuruldu; lisans ve üçüncü taraf bildirimleri editör
-deposunda. Editörün kendisi kapalı kaynaktır ve kullanım şartlarıyla dağıtılır. Temalar MIT.
+Built on an open-source editor core; its license and third-party notices live in the editor repository.
+The editor itself is closed source and ships under terms of use. Themes are MIT.
 </sub>
