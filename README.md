@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/banner-dark.svg">
-  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/banner-light.svg" width="100%" alt="Talkdedsec — kod editörü. Telemetri yok.">
+  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/banner-light.svg" width="100%" alt="Talkdedsec — kod editörü. Telemetri yok. 0,41 sn açılış, 9 süreç, 64 eklenti, 0 telemetri ucu.">
 </picture>
 
 <p align="center">
@@ -30,11 +30,8 @@ Bunların hiçbiri sana bir şey kazandırmıyor ama açılış süresini, belle
 belirleyen şey tam olarak bunlar.
 
 Talkdedsec bu katmanların sökülmesiyle ortaya çıktı. Telemetri kaynaktan kaldırıldı — kapatılmadı,
-ayarla gizlenmedi, kaldırıldı. Açılışta bağlanılan sunucu yok. Güncelleme sunucusu yok. Yerleşik eklenti
-sayısı 98'den 64'e indi. Geriye kalan editörün kendisi: dosya, düzenleyici, terminal, git, ve editörün
-çekirdeğinde çalışan bir ajan.
-
-Ölçümler tek bir makinede, üretim sürümü üzerinde, soğuk profille alındı. Yuvarlanmadı.
+ayarla gizlenmedi, kaldırıldı. Açılışta bağlanılan sunucu yok. Güncelleme sunucusu yok. Geriye kalan
+editörün kendisi: dosya, düzenleyici, terminal, git, ve editörün çekirdeğinde çalışan bir ajan.
 
 <sub><b>Windows x64 · sürüm 1.130.0 · kullanıcı düzeyi kurulum, yönetici hakkı istemez</b></sub>
 
@@ -43,31 +40,36 @@ sayısı 98'den 64'e indi. Geriye kalan editörün kendisi: dosya, düzenleyici,
 
 <br>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/sokuldu-dark.svg">
+  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/sokuldu-light.svg" width="100%" alt="Sökülmeden önce ve sonra: açılış 2-4 sn'den 0,41 sn'ye, süreç 12-14'ten 9'a, yerleşik eklenti 98'den 64'e, açılışta bağlanılan uç nokta sıfıra indi.">
+</picture>
+
+<br>
+
 <table>
 <tr>
-<td width="66%" valign="top">
+<td width="62%" valign="top">
 
-### Ölçümler
+### Geri kalan ölçümler
 
 | | |
 |:---|---:|
-| Açılış, soğuk profil | **0,41 sn** |
-| Süreç sayısı | **9** |
 | Boşta bellek | **1,40 GB** |
 | Kurulu boyut | **1,12 GB** |
 | Kurulum dosyası | **253 MB** |
-| Yerleşik eklenti | **64** <sub>← 98</sub> |
-| Açılışta bağlanılan uç nokta | **0** |
 | Pakette kalan source map | **0** |
+| Tema | **5** <sub>× 183 renk anahtarı</sub> |
+| Eklenti kaynağı | **Open VSX** |
 
 <sub>Yöntem ve ham çıktılar: <a href="https://code.talkdedsec.com/tr/olcum/">code.talkdedsec.com/tr/olcum</a></sub>
 
 </td>
-<td width="34%" align="center" valign="top">
+<td width="38%" align="center" valign="middle">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/goz-koyu.png">
-  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/goz-acik.png" width="240" alt="Talkdedsec logosu — noktalardan oluşan bir göz">
+  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/goz-acik.png" width="300" alt="Talkdedsec logosu — noktalardan oluşan bir göz">
 </picture>
 
 <sub><b>BAKAR, KAYDETMEZ</b></sub>
@@ -82,9 +84,8 @@ sayısı 98'den 64'e indi. Geriye kalan editörün kendisi: dosya, düzenleyici,
 
 <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/themes.svg" width="100%" alt="Beş tema: Dark, Midnight, Matrix, Ember, Light">
 
-Kurulumla birlikte beş tema geliyor; her biri 183 renk anahtarı ve 16 renklik terminal paleti taşıyor.
-Tema değişince editör kromu, paneller, git işaretleri ve terminal çıktısı birlikte dönüyor —
-yalnız kod alanı değil.
+Her tema 183 renk anahtarı ve 16 renklik terminal paleti taşıyor. Tema değişince editör kromu, paneller,
+git işaretleri ve terminal çıktısı birlikte dönüyor — yalnız kod alanı değil.
 
 <br>
 
@@ -108,26 +109,25 @@ for you, yet it is exactly what determines startup time, memory use and process 
 
 Talkdedsec is what was left after those layers were stripped out. Telemetry was removed at the source —
 not disabled, not hidden behind a setting, removed. No server is contacted at startup. There is no update
-server. Built-in extensions went from 98 down to 64. What remains is the editor itself: files, editor,
-terminal, git, and an agent running in the editor core.
+server. What remains is the editor itself: files, editor, terminal, git, and an agent running in the editor core.
 
-Measurements were taken on a single machine, on the production build, with a cold profile. Nothing rounded.
+**Before and after the strip** — cold start 2–4 s → **0.41 s** · processes 12–14 → **9** ·
+built-in extensions 98 → **64** · endpoints contacted at startup → **0**
 
 | | |
 |:---|---:|
-| Cold start, clean profile | **0.41 s** |
-| Process count | **9** |
 | Idle memory | **1.40 GB** |
 | Installed size | **1.12 GB** |
 | Installer | **253 MB** |
-| Built-in extensions | **64** <sub>← 98</sub> |
-| Endpoints contacted at startup | **0** |
 | Source maps left in the package | **0** |
+| Themes | **5** <sub>× 183 color keys</sub> |
+| Extension source | **Open VSX** |
 
-<sub>Method and raw output: <a href="https://code.talkdedsec.com/en/olcum/">code.talkdedsec.com/en/olcum</a></sub>
+<sub>Measured on a single machine, on the production build, with a cold profile. Nothing rounded.
+Method and raw output: <a href="https://code.talkdedsec.com/en/olcum/">code.talkdedsec.com/en/olcum</a></sub>
 
-Five themes ship with the editor, each carrying 183 color keys and a 16-color terminal palette. Switching
-a theme turns the editor chrome, panels, git decorations and terminal output together — not just the code area.
+Each theme carries 183 color keys and a 16-color terminal palette. Switching a theme turns the editor
+chrome, panels, git decorations and terminal output together — not just the code area.
 
 - **[talkdedsec-editor](https://github.com/talkdedseccode/talkdedsec-editor)** — docs, releases, terms of use and third-party notices
 - **[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** — community themes, via pull request, no account needed
@@ -142,5 +142,3 @@ a theme turns the editor chrome, panels, git decorations and terminal output tog
 Editör açık kaynak bir editör çekirdeği üzerine kuruldu; lisans ve üçüncü taraf bildirimleri editör
 deposunda. Editörün kendisi kapalı kaynaktır ve kullanım şartlarıyla dağıtılır. Temalar MIT.
 </sub>
-
-

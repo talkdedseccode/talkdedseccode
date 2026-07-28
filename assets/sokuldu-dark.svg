@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="604" viewBox="0 0 1200 604" role="img" aria-label="Sokulmeden once ve sonra: acilis, surec sayisi, yerlesik eklenti, telemetri ucu">
+<title>Aynı çekirdek, sökülmeden önce ve sonra</title>
+<rect width="1200" height="604" fill="#0b0b0c"/>
+<rect x="0.5" y="0.5" width="1199" height="603" fill="none" stroke="#232428"/>
+<text x="56" y="56" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15" letter-spacing="4" fill="#8f959e">AYNI ÇEKİRDEK</text>
+<text x="56" y="92" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="34" font-weight="600" letter-spacing="-0.6" fill="#f2f3f5">Sökülmeden önce ve sonra</text>
+<text x="56" y="132" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="13" fill="#8f959e">Çubuk, sonraki değerin öncekine oranı</text>
+<text x="452" y="132" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="14" letter-spacing="3" fill="#5a5f66">ÖNCE</text>
+<text x="1048" y="132" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="14" letter-spacing="3" fill="#8f959e">SONRA</text>
+<line x1="56" y1="150" x2="1144" y2="150" stroke="#232428"/>
+<text x="56" y="212" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Açılış, soğuk profil</text>
+<rect x="470" y="195" width="560" height="22" fill="#101012" stroke="#232428"/>
+<rect x="470" y="195" width="78" height="22" fill="#f2f3f5"/>
+<text x="452" y="212" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">2–4 sn</text>
+<text x="1048" y="213" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">0,41 sn</text>
+<line x1="56" y1="254" x2="1144" y2="254" stroke="#232428"/>
+<text x="56" y="308" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Süreç sayısı</text>
+<rect x="470" y="291" width="560" height="22" fill="#101012" stroke="#232428"/>
+<rect x="470" y="291" width="386" height="22" fill="#f2f3f5"/>
+<text x="452" y="308" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">12–14</text>
+<text x="1048" y="309" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">9</text>
+<line x1="56" y1="350" x2="1144" y2="350" stroke="#232428"/>
+<text x="56" y="404" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Yerleşik eklenti</text>
+<rect x="470" y="387" width="560" height="22" fill="#101012" stroke="#232428"/>
+<rect x="470" y="387" width="364" height="22" fill="#f2f3f5"/>
+<text x="452" y="404" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">98</text>
+<text x="1048" y="405" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">64</text>
+<line x1="56" y1="446" x2="1144" y2="446" stroke="#232428"/>
+<text x="56" y="500" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" fill="#c9cdd4">Açılışta bağlanılan uç nokta</text>
+<rect x="470" y="483" width="560" height="22" fill="#101012" stroke="#232428"/>
+<rect x="470" y="483" width="6" height="22" fill="#f2f3f5"/>
+<text x="452" y="500" text-anchor="end" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#5a5f66" text-decoration="line-through">var</text>
+<text x="1048" y="501" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="22" font-weight="600" fill="#f2f3f5">0</text>
+<text x="56" y="586" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="14" fill="#8f959e">Tek makine · üretim sürümü · soğuk profil · boşta pencere</text>
+</svg>
