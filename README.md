@@ -1,79 +1,52 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/banner-dark.svg">
-  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/banner-light.svg" width="100%" alt="Talkdedsec — code editor. No telemetry. 0.41 s cold start, 9 processes, 64 extensions, 0 telemetry endpoints.">
+  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/banner-light.svg" width="100%" alt="Talkdedsec Editor — no telemetry, no unnecessary background services">
 </picture>
 
 <p align="center">
-  <a href="https://code.talkdedsec.com"><b>code.talkdedsec.com</b></a>
+  <a href="https://code.talkdedsec.com"><b>Website</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/talkdedseccode/talkdedsec-editor"><b>editor</b></a>
+  <a href="https://github.com/talkdedseccode/talkdedsec-editor/releases/latest"><b>Download</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/talkdedseccode/talkdedsec-themes"><b>themes</b></a>
+  <a href="https://code.talkdedsec.com/en/belgeler/"><b>Documentation</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/talkdedseccode/talkdedsec-editor/discussions"><b>forum</b></a>
+  <a href="https://github.com/talkdedseccode/talkdedsec-editor/discussions"><b>Discussions</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/talkdedseccode/talkdedsec-themes"><b>Themes</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/talkdedseccode/talkdedsec-editor/security"><b>Security</b></a>
 </p>
 
-<p align="center"><sub>Official GitHub account for <b>code.talkdedsec.com</b> and the Talkdedsec editor ecosystem.</sub></p>
-
-<br>
-
-<table>
-<tr><td valign="top">
-
-<sub>WHAT I'M BUILDING</sub>
-
-## [Talkdedsec](https://code.talkdedsec.com)
-
-**I got tired of watching an editor start.**
-
-Not the editor itself. The things it drags along: language servers for languages I don't write,
-a telemetry pipeline, an update checker that fires before I've typed a character. None of it was
-my idea, and all of it sits between me and a cursor.
-
-So I took it apart. Telemetry didn't get a toggle, it got removed. There's no update server to
-disable, because there isn't one. Thirty-four built-in extensions went with it.
-
-What's left boots in 0.41 seconds. Nine processes. Nothing dials out, so it works the same on a
-plane as it does at home.
-
-<sub><b>Windows x64 · v1.130.0 · installs per-user, never asks for admin</b></sub>
-
-</td></tr>
-</table>
-
-<br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/sokuldu-dark.svg">
-  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/sokuldu-light.svg" width="100%" alt="Before and after the strip: cold start 2-4 s to 0.41 s, processes 12-14 to 9, built-in extensions 98 to 64, startup endpoints to zero.">
-</picture>
+<p align="center">
+  <sub>Official GitHub account for <b>code.talkdedsec.com</b> and the Talkdedsec editor ecosystem.</sub>
+</p>
 
 <br>
 
 <table>
 <tr>
-<td width="62%" valign="top">
+<td width="64%" valign="top">
 
-### The rest of the numbers
+<sub>THE PROJECT</sub>
 
-| | |
-|:---|---:|
-| Idle memory | **1.40 GB** |
-| Installed size | **1.12 GB** |
-| Installer | **253 MB** |
-| Source maps shipped | **0** |
-| Themes | **5** <sub>× 183 color keys</sub> |
-| Extensions from | **Open VSX** |
+# Talkdedsec Editor
 
-<sub>Same machine, production build, clean profile. Method and raw output:
-<a href="https://code.talkdedsec.com/en/olcum/">code.talkdedsec.com/en/olcum</a></sub>
+A focused Windows code editor built from an open-source editor core, with telemetry, unused built-in
+extensions and unnecessary startup work removed.
+
+The goal is not to turn an editor into a platform. It is to keep the path between opening a project and
+writing code as short, predictable and private as possible.
+
+**Current release:** `v1.130.0`  
+**Platform:** Windows x64  
+**Installation:** Per-user, no administrator rights required
 
 </td>
-<td width="38%" align="center" valign="middle">
+<td width="36%" align="center" valign="middle">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/goz-koyu.png">
-  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/goz-acik.png" width="300" alt="Talkdedsec logo — an eye drawn in halftone dots">
+  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/goz-acik.png" width="250" alt="Talkdedsec eye logo">
 </picture>
 
 <sub><b>LOOKS. LOGS NOTHING.</b></sub>
@@ -84,58 +57,190 @@ plane as it does at home.
 
 <br>
 
-### Themes
+## Built around four rules
 
-<img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/themes.svg" width="100%" alt="Five themes: Dark, Midnight, Matrix, Ember, Light">
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Five ship with it. Each covers 183 color keys and a full 16-colour terminal palette, so switching one
-doesn't leave the panels, git marks and terminal behind looking like the old theme.
+### No telemetry
+
+Telemetry is removed rather than hidden behind a setting. The editor does not depend on an analytics
+pipeline or a startup reporting endpoint.
+
+</td>
+<td width="50%" valign="top">
+
+### No privileged install
+
+The application installs inside the current user profile and does not require administrator access.
+It keeps its own settings and extension state.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### No forced updater
+
+There is no background update service. New versions are installed manually over the existing one, while
+user settings remain intact.
+
+</td>
+<td width="50%" valign="top">
+
+### Your provider, your account
+
+The embedded agent connects through the account selected by the user. There is no separate seat fee,
+token resale layer or Talkdedsec-hosted proxy in the middle.
+
+</td>
+</tr>
+</table>
 
 <br>
 
-### Repositories
+## Measured, not estimated
 
-- **[talkdedsec-editor](https://github.com/talkdedseccode/talkdedsec-editor)** — docs, releases, terms of use, third-party notices
-- **[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** — community themes. Open a pull request; no separate account or form
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/sokuldu-dark.svg">
+  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/sokuldu-light.svg" width="100%" alt="Before and after measurements for startup time, processes, extensions and startup endpoints">
+</picture>
+
+<br>
+
+| Measurement | Current build |
+|:--|--:|
+| Cold start | **0.41 s** |
+| Processes | **9** |
+| Built-in extensions | **64** |
+| Startup telemetry endpoints | **0** |
+| Idle memory | **1.40 GB** |
+| Installed size | **1.12 GB** |
+| Installer size | **253 MB** |
+| Source maps shipped | **0** |
+
+<sub>
+Measured on the same machine with a production build and a clean profile. Method and raw output:
+<a href="https://code.talkdedsec.com/en/olcum/">code.talkdedsec.com/en/olcum</a>
+</sub>
+
+<br>
+
+## Themes without unfinished edges
+
+<img src="https://raw.githubusercontent.com/talkdedseccode/talkdedseccode/main/assets/themes.svg" width="100%" alt="Talkdedsec themes: Dark, Midnight, Matrix, Ember and Light">
+
+Five themes ship with the editor. Each covers **183 interface colour keys** and a complete
+**16-colour terminal palette**, so changing a theme also changes panels, Git decorations and terminal
+colours instead of leaving parts of the interface behind.
+
+Community themes live in [`talkdedsec-themes`](https://github.com/talkdedseccode/talkdedsec-themes).
+Contributions are checked automatically before merge.
+
+<br>
+
+## Download and verify
+
+The current Windows installer is published only through the
+[`talkdedsec-editor` Releases page](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest).
+
+The current installer is not code-signed yet. Verify its SHA-256 digest before running it:
+
+```powershell
+Get-FileHash .\TalkdedsecSetup.exe -Algorithm SHA256
+```
+
+Expected digest for `v1.130.0`:
+
+```text
+3f8a6dda74030e30a85b5f72b327099f31859d5af8b144e6b678e1327d2129a8
+```
+
+Machine-readable checksum:
+[`checksums/v1.130.0.sha256`](https://github.com/talkdedseccode/talkdedsec-editor/blob/main/checksums/v1.130.0.sha256)
+
+<br>
+
+## Repository map
+
+| Repository | Purpose | License / access |
+|:--|:--|:--|
+| [`talkdedsec-editor`](https://github.com/talkdedseccode/talkdedsec-editor) | Releases, documentation, issue tracking, security policy and third-party notices | Editor binary under Terms of Use |
+| [`talkdedsec-themes`](https://github.com/talkdedseccode/talkdedsec-themes) | Built-in theme references, community themes and validation tooling | MIT |
+| [`talkdedseccode`](https://github.com/talkdedseccode/talkdedseccode) | Official GitHub profile and project overview | Profile content |
+
+<br>
+
+## Trust and disclosure
+
+- Security vulnerabilities should be reported through
+  [GitHub Security Advisories](https://github.com/talkdedseccode/talkdedsec-editor/security/advisories/new),
+  not through a public issue.
+- Third-party licenses and notices are published in
+  [`THIRD-PARTY-NOTICES.md`](https://github.com/talkdedseccode/talkdedsec-editor/blob/main/THIRD-PARTY-NOTICES.md).
+- The editor binary is closed source and distributed under
+  [Terms of Use](https://github.com/talkdedseccode/talkdedsec-editor/blob/main/LICENSE).
+- Community themes and their validation tooling are maintained separately under the MIT license.
+- Open VSX is used as the extension source; Marketplace-only extensions may not be available.
 
 <br>
 
 <details>
-<summary><b>Türkçe</b></summary>
+<summary><b>Türkçe özet</b></summary>
 
 <br>
 
-**Editörün açılmasını beklemekten bıktım.**
+# Talkdedsec Editör
 
-Editörün kendisinden değil. Yanında sürüklediği şeylerden: yazmadığım diller için dil sunucuları,
-bir telemetri hattı, daha tek karakter yazmadan çalışan bir güncelleme kontrolü. Hiçbiri benim fikrim
-değildi ve hepsi benimle imleç arasında duruyordu.
+Talkdedsec; açık kaynak bir editör çekirdeği üzerine kurulan, Windows x64 için hazırlanmış, gereksiz
+başlangıç işlerini ve kullanılmayan yerleşik bileşenleri azaltmayı hedefleyen bir kod editörüdür.
 
-Söktüm. Telemetriye ayar konmadı, kaldırıldı. Kapatılacak bir güncelleme sunucusu da yok, çünkü hiç yok.
-Otuz dört yerleşik eklenti de onunla gitti.
+Temel yaklaşımı nettir:
 
-Geriye kalan 0,41 saniyede açılıyor. Dokuz süreç. Hiçbir yere bağlanmıyor, yani uçakta da evdeki gibi çalışıyor.
+- Telemetri ayarla kapatılmak yerine kaynaktan kaldırılır.
+- Kurulum kullanıcı hesabına yapılır; yönetici yetkisi istenmez.
+- Arka planda zorunlu güncelleme servisi çalışmaz.
+- Gömülü ajan, kullanıcının seçtiği sağlayıcı hesabı üzerinden bağlanır.
+- Eklentiler Open VSX üzerinden gelir.
+- Editörün ayarları ve oturum verileri kendine ait `.talkdedsec` alanında tutulur.
 
-**Sökülmeden önce ve sonra** — açılış 2–4 sn → **0,41 sn** · süreç 12–14 → **9** ·
-yerleşik eklenti 98 → **64** · açılışta bağlanılan uç nokta → **0**
+### Güncel sürüm
 
 | | |
-|:---|---:|
+|:--|--:|
+| Sürüm | **v1.130.0** |
+| Soğuk açılış | **0,41 sn** |
+| Süreç | **9** |
+| Yerleşik eklenti | **64** |
+| Başlangıç telemetri uç noktası | **0** |
 | Boşta bellek | **1,40 GB** |
 | Kurulu boyut | **1,12 GB** |
 | Kurulum dosyası | **253 MB** |
-| Pakete giren source map | **0** |
-| Tema | **5** <sub>× 183 renk anahtarı</sub> |
-| Eklenti kaynağı | **Open VSX** |
 
-<sub>Aynı makine, üretim sürümü, soğuk profil. Yöntem ve ham çıktılar:
-<a href="https://code.talkdedsec.com/tr/olcum/">code.talkdedsec.com/tr/olcum</a></sub>
+Ölçüm yöntemi ve ham sonuçlar:
+[code.talkdedsec.com/tr/olcum](https://code.talkdedsec.com/tr/olcum/)
 
-Beş tema geliyor. Her biri 183 renk anahtarı ve tam 16 renklik terminal paleti kapsıyor; tema
-değişince paneller, git işaretleri ve terminal eski temada kalmıyor.
+### İndirme güvenliği
 
-- **[talkdedsec-editor](https://github.com/talkdedseccode/talkdedsec-editor)** — belgeler, sürümler, kullanım şartları, üçüncü taraf bildirimleri
-- **[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** — topluluk temaları. Pull request aç; ayrı hesap veya form yok
+Kurulum dosyası yalnızca
+[`talkdedsec-editor` Releases](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest)
+sayfasından yayımlanır. Mevcut paket henüz kod imzalı olmadığı için çalıştırmadan önce SHA-256 değeri
+kontrol edilmelidir.
+
+```powershell
+Get-FileHash .\TalkdedsecSetup.exe -Algorithm SHA256
+```
+
+Beklenen değer:
+
+```text
+3f8a6dda74030e30a85b5f72b327099f31859d5af8b144e6b678e1327d2129a8
+```
+
+Güvenlik açıklarını herkese açık issue olarak yazmak yerine
+[özel güvenlik bildirimi](https://github.com/talkdedseccode/talkdedsec-editor/security/advisories/new)
+üzerinden gönderin.
 
 </details>
 
@@ -143,7 +248,8 @@ değişince paneller, git işaretleri ve terminal eski temada kalmıyor.
 
 ---
 
-<sub>
-Built on an open-source editor core; its license and third-party notices live in the editor repository.
-The editor itself is closed source and ships under terms of use. Themes are MIT.
-</sub>
+<p align="center">
+  <sub>
+    Built for a quieter editor, a smaller trust surface and a more predictable development environment.
+  </sub>
+</p>
