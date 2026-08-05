@@ -13,6 +13,8 @@
   <a href="https://github.com/talkdedseccode/talkdedsec-editor/discussions"><b>forum</b></a>
 </p>
 
+<p align="center"><sub>Official GitHub account for <b>code.talkdedsec.com</b> and the Talkdedsec editor ecosystem.</sub></p>
+
 <br>
 
 <table>
@@ -94,7 +96,7 @@ doesn't leave the panels, git marks and terminal behind looking like the old the
 ### Repositories
 
 - **[talkdedsec-editor](https://github.com/talkdedseccode/talkdedsec-editor)** — docs, releases, terms of use, third-party notices
-- **[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** — community themes. Open a pull request; no account signup, no form
+- **[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** — community themes. Open a pull request; no separate account or form
 
 <br>
 
@@ -133,7 +135,7 @@ Beş tema geliyor. Her biri 183 renk anahtarı ve tam 16 renklik terminal paleti
 değişince paneller, git işaretleri ve terminal eski temada kalmıyor.
 
 - **[talkdedsec-editor](https://github.com/talkdedseccode/talkdedsec-editor)** — belgeler, sürümler, kullanım şartları, üçüncü taraf bildirimleri
-- **[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** — topluluk temaları. Pull request aç; hesap yok, form yok
+- **[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** — topluluk temaları. Pull request aç; ayrı hesap veya form yok
 
 </details>
 
